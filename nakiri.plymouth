@@ -4,5 +4,5 @@ Description=Nakiri Ayame Start Screen Bootsplash
 ModuleName=script
 
 [script]
-ImageDir=/usr/share/plymouth/themes/nakiri/boot
-ScriptFile=/usr/share/plymouth/themes/nakiri/nakiri.script
+ImageDir=/usr/share/plymouth/themes/nakiri-ayame-plymouth/boot
+ScriptFile=/usr/share/plymouth/themes/nakiri-ayame-plymouth/nakiri.script
