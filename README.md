@@ -14,6 +14,6 @@ add `quiet splash` to kernel parameters
 if booting is too fast to see the whole animation, you can edit 
 `/usr/lib/systemd/system/plymouth-quit.service`
 and add 
-`ExecStartPre=/usr/bin/sleep 10`
+`ExecStartPre=/usr/bin/sleep 10` (10 or however many secound u wanna delay the boot)
 to the `[Service]` category in this file: 
 `/usr/lib/systemd/system/plymouth-quit.service`
