@@ -1,0 +1,17 @@
+nframes = 287;
+nseconds = 7;
+for (i = 1; i <= nframes; i++)
+  frames_buffer[i] = Image("image-" + i + ".png");
+video = Sprite();
+video.SetX(Window.GetWidth() / 2 - frames_buffer[1].GetWidth() / 2);
+video.SetY(Window.GetHeight() / 2 - frames_buffer[1].GetHeight() / 2);
+progress = 1;
+frame = null;
+fun refresh_callback (){
+    if(Math.Int(progress)<=nframes){
+       frame = frames_buffer[Math.Int(progress)];
+       progress = progress + ((nframes/nseconds)/60) ;
+    }
+    video.SetImage(frame);
+  }
+Plymouth.SetRefreshFunction (refresh_callback);
